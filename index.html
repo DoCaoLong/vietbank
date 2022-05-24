@@ -66,9 +66,9 @@
                             </path>
                         </svg>
                     </div>
-                    <p>1800 1122</p>
+                    <p class="scale">1800 1122</p>
                 </div>
-                <div class="header-btn">
+                <div onclick="window.open('tel:19001122')" class="header-btn">
                     <img src="../img/btn-1.png" alt="">
                 </div>
             </div>
@@ -79,7 +79,7 @@
         <div class="header-mobile__logo">
             <img src="../img/logo.png" alt="">
         </div>
-        <div class="header-mobile_btn">
+        <div class="header-mobile__btn">
             <img src="../img/menu.svg" alt="">
         </div>
     </div>
@@ -91,8 +91,12 @@
         <li class="nav-item"><a class="nav-link" href="#" data-menu="portfolio">Portfolio</a></li>
     </div>
 
+
     <section class="section1">
         <div class="section1-bg">
+            <div class="section1-img">
+                <img src="../img/land-sec-5.png" alt="">
+            </div>
         </div>
         <div class="container">
             <div class="section1-wrap">
@@ -104,25 +108,7 @@
                         <img src="../img/text-banner.png" alt="">
                     </div>
                 </div>
-                <form class="section1-right">
-                    <h3 class="section1-right__title">Đăng kí tư vấn ngay</h3>
-                    <div class="group-input">
-                        <div class="wrap-input">
-                            <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
-                        </div>
-                        <div class="wrap-input">
-                            <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
-                        </div>
-                        <div class="wrap-input">
-                            <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
-                        </div>
 
-                        <textarea placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
-                    </div>
-                    <button class="btn-submit" type="submit">
-                        Đăng kí
-                    </button>
-                </form>
             </div>
         </div>
     </section>
@@ -137,22 +123,23 @@
             </div>
             <div class="section2-wrap">
                 <div class="section2-list">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500" class="section2-item">
-                        <img src="../img/s2-1.png" alt="">
+                    <div class="section2-item">
+                        <img data-aos="zoom-out-right" data-aos-duration="1500" src="../img/s2-1.png" alt="">
                     </div>
-                    <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="1500" class="section2-item">
-                        <img src="../img/s2-2.png" alt="">
+                    <div class="section2-item">
+                        <img data-aos="zoom-out-left" data-aos-duration="1500" src="../img/s2-2.png" alt="">
                     </div>
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500" class="section2-item">
-                        <img src="../img/s2-3.png" alt="">
+                    <div class="section2-item">
+                        <img data-aos="zoom-out-right" data-aos-duration="1500" src="../img/s2-3.png" alt="">
                     </div>
-                    <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="1500" class="section2-item">
-                        <img src="../img/s2-4.png" alt="">
+                    <div class="section2-item">
+                        <img data-aos="zoom-out-left" data-aos-duration="1500" src="../img/s2-4.png" alt="">
                     </div>
-                    <div data-aos-duration="1500" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                        class=sec2-btn>
+                    <a href="https://static.vietbank.com.vn/web/Vietbank-Digital-/kh-ca-nhan/ctkm-vi-vu-he-moi-qua-toi-trao-tay-2022/TH%E1%BB%82%20L%E1%BB%86%20CH%C6%AF%C6%A0NG%20TR%C3%8CNH%20KHUY%E1%BA%BEN%20M%E1%BA%A0I.pdf"
+                        target="_blank" data-aos-duration="1500" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" class=sec2-btn>
                         <img src="../img/s2-btn1.png" alt="">
-                    </div>
+                    </a>
                     <div data-aos-duration="1500" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                         class=sec2-btn>
                         <img src="../img/s2-btn2.png" alt="">
@@ -176,7 +163,8 @@
         </div>
         <div class="container">
             <div class="section3-title">
-                <img data-aos="zoom-out-up" data-aos-duration="1500" src="../img/sec3-title.png" alt="">
+                <img data-aos-duration="1500" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    src="../img/sec3-title.png" alt="">
             </div>
             <div class="section3-wrap">
                 <div class="section3-left">
@@ -196,8 +184,8 @@
                         <img data-aos="zoom-out-left" data-aos-duration="2000" src="../img/section3-4.png" alt="">
                     </div>
 
-                    <div class="btn-section3">
-                        <img data-aos="zoom-out" data-aos-duration="2000" src="../img/s2-btn2.png" alt="">
+                    <div href="#section6" class="btn-section3 scale">
+                        <img src=" ../img/s2-btn2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -268,7 +256,7 @@
     </section>
 
 
-    <section class="section6">
+    <section id="section6" class="section6">
         <div class="section6-bg">
         </div>
         <div class="container">
@@ -286,15 +274,15 @@
                             <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
                         </div>
                         <div class="wrap-input">
-                            <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
+                            <input required class="section1-right__input" placeholder="Email *" type="text">
                         </div>
                         <div class="wrap-input">
-                            <input required class="section1-right__input" placeholder="Họ và tên *" type="text">
+                            <input required class="section1-right__input" placeholder="Số điện thoại *" type="text">
                         </div>
 
                         <textarea placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
                     </div>
-                    <button class="btn-submit" type="submit">
+                    <button onclick="handleAlert()" class="btn-submit" type="submit">
                         Đăng kí
                     </button>
                 </form>
@@ -336,12 +324,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        const handleAlert = () => {
+            alert("Đăng kí thành công")
+        }
     </script>
 </body>
 

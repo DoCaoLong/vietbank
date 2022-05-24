@@ -1,8 +1,14 @@
+AOS.init({
+    disable: function () {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+    },
+});
+
 const menuHeader = document.querySelector(".header-mobile");
-const menuToggle = document.querySelector(".header-mobile_btn");
+const menuToggle = document.querySelector(".header-mobile__btn");
 const expandClass = "is-expand";
 menuToggle.addEventListener("click", function (e) {
-    console.log("e.target", e.target);
     menuHeader.classList.contains(expandClass)
         ? menuHeader.classList.remove(expandClass)
         : //   menuToggle.classList.add("fa-bars"),
