@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Grunt Project</title>
     <link rel="icon" href="https://www.vivosmartphone.vn/themes/vivo/favicon.ico">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="keywords" content="">
+    <meta name="description" content="VietBank">
     <meta name="title" content="" />
     <meta name="description" content="" />
     <meta property="og:locale" content="vi" />
@@ -16,7 +20,11 @@
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
-
+    <meta property="og:url" content="https://www.knparadise-official.xyz/vietbank">
+    <meta property="og:title" content="VietBank">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="VietBank">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/fonts.css">
     <link rel="stylesheet" href="dest/stylelibs.min.css">
@@ -37,16 +45,26 @@
             </div>
             <ul class="header-menu__list">
                 <li class="header-menu__item">
-                    Chương trình
+                    <a href="#section2">
+                        Chương trình
+                    </a>
                 </li>
                 <li class="header-menu__item">
-                    lãi xuất
+                    <a href="#section4">
+                        lãi xuất
+                    </a>
+
                 </li>
                 <li class="header-menu__item">
-                    vòng quay
+                    <a href="#section5">
+                        Vòng quay
+                    </a>
                 </li>
                 <li class="header-menu__item">
-                    liên hệ
+                    <a href="#section6
+                   ">
+                        Liên hệ
+                    </a>
                 </li>
             </ul>
             <div class="header-menu__right">
@@ -85,14 +103,14 @@
     </div>
 
     <div class="nav">
-        <li class="nav-item"><a class="nav-link" href="#" data-menu="about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" data-menu="team">Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" data-menu="project">Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" data-menu="portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2" data-menu="section2">Chương trình</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3" data-menu="section3">Lãi xuất</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section5" data-menu="section5">Vòng quay</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section6" data-menu="section6">Liên hệ</a></li>
     </div>
 
 
-    <section class="section1">
+    <section id="section1s" class="section1">
         <div class="section1-bg">
             <div class="section1-img">
                 <img src="../img/land-sec-5.png" alt="">
@@ -113,7 +131,7 @@
         </div>
     </section>
 
-    <section class="section2">
+    <section data-scroll-section id="section2" class="section2">
         <div class="section2-bg">
         </div>
         <div class="container">
@@ -154,7 +172,7 @@
     </section>
 
 
-    <section class="section3">
+    <section id="section3" data-scroll-section class="section3">
         <div class="section3-bg__left">
             <img src="../img/chambi.png" alt="">
         </div>
@@ -192,7 +210,7 @@
         </div>
     </section>
 
-    <section class="section4">
+    <section id="section4" data-scroll-section class="section4">
         <div class="section4-bg">
         </div>
         <div class="container">
@@ -220,7 +238,7 @@
     </section>
 
 
-    <section class="section5">
+    <section id="section5" data-scroll-section class="section5">
         <div class="section5-bg__left">
             <img src="../img/chambi.png" alt="">
         </div>
@@ -256,7 +274,7 @@
     </section>
 
 
-    <section id="section6" class="section6">
+    <section id="section6" data-scroll-section id="section6" class="section6">
         <div class="section6-bg">
         </div>
         <div class="container">
@@ -325,14 +343,15 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <script>
         const handleAlert = () => {
             alert("Đăng kí thành công")
         }
     </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

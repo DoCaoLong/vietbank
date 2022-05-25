@@ -5,19 +5,15 @@ AOS.init({
     },
 });
 
-const menuHeader = document.querySelector(".header-mobile");
+const menuHeader = document.querySelector(".nav");
 const menuToggle = document.querySelector(".header-mobile__btn");
-const expandClass = "is-expand";
 menuToggle.addEventListener("click", function (e) {
-    menuHeader.classList.contains(expandClass)
-        ? menuHeader.classList.remove(expandClass)
-        : //   menuToggle.classList.add("fa-bars"),
-          //     menuToggle.classList.remove("fa-times", "color-black")
-          menuHeader.classList.add(expandClass);
-    //   menuToggle.classList.remove("fa-bars"),
-    //     menuToggle.classList.add("fa-times", "color-black")
+    // menuHeader.classList.contains(expandClass)
+    //     ? menuHeader.classList.remove(expandClass)
+    //     : menuHeader.classList.add(expandClass);
+    menuHeader.classList.toggle("is-expand");
 }),
     window.addEventListener("click", function (e) {
         e.target.contains(menuToggle) ||
-            menuHeader.classList.remove(expandClass);
+            menuHeader.classList.remove("is-expand");
     });
